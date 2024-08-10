@@ -1,0 +1,37 @@
+@model IEnumerable<inventario.Entities.Produto>
+
+
+<a asp-action="Create">Cadastrar produtos</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dono)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var produtos in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => produtos.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => produtos.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => produtos.Dono)
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

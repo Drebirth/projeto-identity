@@ -141,3 +141,4 @@ C:\Users\danie\Estudos\projetos\inventario\obj\Debug\net8.0\refint\inventario.dl
 C:\Users\danie\Estudos\projetos\inventario\obj\Debug\net8.0\inventario.pdb
 C:\Users\danie\Estudos\projetos\inventario\obj\Debug\net8.0\inventario.genruntimeconfig.cache
 C:\Users\danie\Estudos\projetos\inventario\obj\Debug\net8.0\ref\inventario.dll
+C:\Users\danie\Estudos\projetos\inventario\obj\Debug\net8.0\inventario.sourcelink.json

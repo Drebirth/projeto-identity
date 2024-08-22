@@ -13,6 +13,12 @@
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantidade)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Dono)
             </th>
         </tr>
@@ -28,7 +34,18 @@
                     @Html.DisplayFor(model => produtos.Nome)
                 </td>
                 <td>
+                    @Html.DisplayFor(model => produtos.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => produtos.Quantidade)
+                </td>
+                <td>
                     @Html.DisplayFor(model => produtos.Dono)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@produtos.Id">Editar</a>
+                    <a asp-action="Details" asp-route-id="@produtos.Id">Detalhes</a>
+                    <a asp-action="Delete" asp-route-id="@produtos.Id">Excluir</a>
                 </td>
             </tr>
         }

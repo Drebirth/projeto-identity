@@ -1,0 +1,32 @@
+@model inventario.Entities.Produto;
+
+@{
+    ViewData["Title"] = "Detalhes do item";
+}
+
+<div >
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Nome)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Nome)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Descricao)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Descricao)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Quantidade)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Quantidade)
+        </dt>
+    </dl>
+</div>
+
+<a asp-action="Editar" asp-route-id="@Model.Id">Editar</a>
+<a asp-action="Index">Voltar</a>
+
